@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Cyber Council – Website Revamp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip" href="#"
+      onclick="document.querySelector('main').focus();return false">Skip to
+      content</a><div class="prog" id="prog"></div><div class="cg"
+      id="cg"></div><button class="thb" id="th"
+      aria-label="Toggle light or dark theme">🌓</button>
+    <header>
+      <div class="container bar">
+        <a class="logo" href="#home"><i>🛡</i>Cyber Council</a>
+        <nav class="main" id="dnav" aria-label="Main"></nav>
+        <div class="hdr-r"><select class="lg" id="lg"
+            aria-label="Language"><option>EN</option><option>ES</option><option>FR</option><option>DE</option><option>HI</option><option>TA</option></select><a
+            class="login" href="#" target="_blank" rel="noopener">Member
+            Login</a><a class="btn btn-p btn-sm" href="#membership">Join
+            Now</a></div>
+        <button class="sbtn" id="sb"
+          aria-label="Search (Ctrl+K)">🔍</button><button class="burger" id="bg"
+          aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+      <div class="mnav" id="mnav"></div>
+    </header>
+    <a class="btn btn-p pj" href="#membership">Join Now</a>
+
+    <main tabindex="-1">
+      <!-- HOME -->
+      <section class="page" id="home">
+        <div class="hero"><canvas class="net" id="net"></canvas><div
+            class="orb o1"></div><div class="orb o2"></div>
+          <div class="globe"><canvas id="gl" width="340" height="340"
+              aria-label="Rotating globe with Chapter locations"></canvas></div>
+          <div class="container"><span class="eyebrow">Global · Executive ·
+              Connected</span>
+            <h1>Leading cybersecurity, <span class="grad"
+                id="typ">together.</span></h1>
+            <p>A worldwide community of security leaders and growing regional
+              Chapters.</p>
+            <div class="acts"><a class="btn btn-p" href="#membership">Join Now
+                →</a><a class="btn btn-o" href="#events">Explore
+                Events</a></div></div></div>
+        <div class="container stats"><div class="row">
+            <div class="col-md-3"><div class="stat rv"><b data-n="40"
+                  data-s="+">0</b><span>Countries represented</span></div></div>
+            <div class="col-md-3"><div class="stat rv"><b data-n="85"
+                  data-s="+">0</b><span>Regional Chapters</span></div></div>
+            <div class="col-md-3"><div class="stat rv"><b data-n="12000"
+                  data-s="+">0</b><span>Security leaders</span></div></div>
+            <div class="col-md-3"><div class="stat rv"><b data-n="150"
+                  data-s="+">0</b><span>Events each
+                  year</span></div></div></div></div>
+        <div class="sec"><div class="container"><div class="center hd rv"><span
+                class="eyebrow">Pathways</span><h2>Find your place in the
+                community</h2><p>Multiple ways to learn, connect, contribute and grow with the Cyber Council.</p></div>
+            <div class="row" id="paths"></div></div></div>
+        <div class="mq"><div><span>🌍 Global Forum</span><span>🛡 Hackers
+              Halted</span><span>🔄 Cybersecurity Exchange</span><span>🎓
+              Student Leaders</span><span>📍 Regional Chapters</span><span>📚
+              Whitepapers</span><span>🤝 Peer Network</span><span>🌍 Global
+              Forum</span><span>🛡 Hackers Halted</span><span>🔄 Cybersecurity
+              Exchange</span><span>🎓 Student Leaders</span><span>📍 Regional
+              Chapters</span><span>📚 Whitepapers</span><span>🤝 Peer
+              Network</span></div></div>
+        <div class="sec"><div class="container center"><span
+              class="eyebrow">Voices</span><h2 class="rv">Trusted by security
+              leaders</h2><div class="tqs"><div class="tq on"><q>“A rare space
+                  where executives actually trade ideas.”</q><span>CISO,
+                  Placeholder Org</span></div><div class="tq"><q>“My Chapter
+                  turned local meetups into real careers.”</q><span>Chapter
+                  Lead, Placeholder</span></div><div class="tq"><q>“The
+                  mentorship programme changed my path.”</q><span>Student
+                  Member, Placeholder</span></div></div><span
+              class="tag ph">Placeholder quotes</span></div></div>
+        <div class="sec" style="padding-top:0"><div class="container"><div
+              class="cta rv"><h2>Be part of what’s next.</h2><p>Join leaders
+                shaping the future of cybersecurity.</p><a class="btn btn-p"
+                href="#membership">Join Now</a></div></div></div>
+      </section>
+
+      <!-- RESOURCES -->
+      <section class="page" id="resources" hidden>
+        <div class="page-hero"><div class="container"><span
+              class="eyebrow">Resources</span><h1>Knowledge for security
+              leaders</h1><p>Research, insight and standards from the
+              community.</p></div></div>
+        <div class="sec"><div class="container"><div class="row">
+              <div class="col-md-4" id="community"><div class="card rv"><div
+                    class="img" style="--c1:#6a5cff;--c2:#12c2b0">💬</div><div
+                    class="bd"><span class="tag">Coming soon</span><h4>Community
+                      Platform</h4><p>Your community, beyond the conversation. A
+                      dedicated space for members to connect, share insights and
+                      engage with peers.</p><span class="btn btn-o btn-sm"
+                      style="opacity:.6">Mighty Networks –
+                      soon</span></div></div></div>
+              <div class="col-md-4" id="whitepapers"><div class="card rv"><div
+                    class="img" style="--c1:#0b2a5b;--c2:#4c7dff">📄</div><div
+                    class="bd"><h4>Whitepapers</h4><p>Browse in-depth research.
+                      <span class="tag ph">Listing: placeholder</span></p><a
+                      class="btn btn-p btn-sm" href="#whitepapers">Submit a
+                      Whitepaper</a></div></div></div>
+              <div class="col-md-4" id="articles"><div class="card rv"><div
+                    class="img" style="--c1:#12c2b0;--c2:#0b2a5b">📰</div><div
+                    class="bd"><h4>Articles</h4><p>Insights from the leaders
+                      shaping cybersecurity.</p><a class="btn btn-p btn-sm"
+                      href="#articles">Submit an Article</a></div></div></div>
+              <div class="col-md-6" id="chapter-formation"><div
+                  class="card rv"><div class="bd"><h4>Chapter Formation and
+                      Operating Model</h4><p>Everything needed to start and run
+                      a Chapter. <span class="tag ph">PDF link:
+                        placeholder</span></p><a class="btn btn-o btn-sm"
+                      href="#" target="_blank" rel="noopener">Open PDF
+                      ↗</a></div></div></div>
+              <div class="col-md-6" id="ethics"><div class="card rv"><div
+                    class="bd"><h4>Code of Ethics — Our Standards</h4><p>The
+                      principles every member commits to uphold.</p><a
+                      class="btn btn-o btn-sm" href="#ethics">Read the
+                      standards</a></div></div></div>
+            </div></div></div>
+      </section>
+
+      <!-- MEMBERSHIP -->
+      <section class="page" id="membership" hidden>
+        <div class="page-hero"><div class="container"><span
+              class="eyebrow">Membership</span><h1>Global perspective. Local
+              connection.</h1><p>Join the network of cybersecurity
+              leaders.</p><a class="btn btn-p" href="#membership">Join
+              Now</a></div></div>
+        <div class="sec" id="about-membership"><div class="container split"><div
+              class="rv"><span class="eyebrow">About
+                Membership</span><h2>Membership that works for
+                you</h2><p>Connect with peers, access exclusive resources and
+                join regional Chapters.</p><span class="tag ph">Placeholder
+                copy</span></div><div class="big-img rv"
+              style="--c1:#4c7dff;--c2:#12c2b0">🤝</div></div></div>
+        <div class="container" style="padding-bottom:var(--sec)"><div
+            class="tabs">
+            <button data-t="benefits">Benefits</button><button
+              data-t="chapter-membership">Chapter</button><button
+              data-t="student-membership">Student</button><button
+              data-t="faqs">FAQs</button></div>
+          <div class="tabpane" id="benefits"><ul class="ck"><li>Executive peer
+                network across regions</li><li>Whitepapers, articles and
+                research access</li><li>Discounted event access</li><li>Chapter
+                participation and leadership</li></ul></div>
+          <div class="tabpane" id="chapter-membership"><h3>Chapter
+              Membership</h3><p>Global perspective. Local connection. Engage
+              through regional Chapter discussions, networking and community
+              initiatives.</p><span class="tag ph">Further copy to
+              follow</span></div>
+          <div class="tabpane" id="student-membership"><h3>Student
+              Membership</h3><p>The next generation of cybersecurity leadership
+              starts here.</p></div>
+          <div class="tabpane" id="faqs"><details class="faq"><summary>Who can
+                join?</summary><p>Placeholder answer.</p></details><details
+              class="faq"><summary>How do Chapters work?</summary><p>Placeholder
+                answer.</p></details><details class="faq"><summary>What does it
+                cost?</summary><p>Placeholder answer.</p></details></div>
+        </div>
+      </section>
+
+      <section class="page" id="notfound" hidden><div
+          class="container nf"><b>404</b><h2>This page took a wrong turn</h2><p
+            style="margin:0 auto 1.5rem">The page you are looking for does not
+            exist or has moved.</p><a class="btn btn-p" href="#home">Back to
+            home</a></div></section>
+      <!-- JOIN -->
+      <section class="page" id="join" hidden><div class="page-hero"><div
+            class="container"><span class="eyebrow">Join Now</span><h1>Become a
+              member</h1><p>Three quick steps.</p></div></div>
+        <div class="sec"><div class="container"><div class="jf"><div
+                class="steps"><i class="on">1</i><i>2</i><i>3</i></div>
+              <div class="jp on" data-s="1"><h3>Choose your membership</h3><div
+                  class="opts"><button class="opt"
+                    data-v="Chapter / Professional">🏢 Chapter /
+                    Professional</button><button class="opt" data-v="Student">🎓
+                    Student</button></div><p class="err" id="jh"></p></div>
+              <div class="jp" data-s="2"><h3>Your details</h3><label>Full
+                  name<input id="jn"
+                    autocomplete="name"></label><label>Email<input id="je"
+                    type="email"
+                    autocomplete="email"></label><label>Country<input id="jc"
+                    autocomplete="country-name"></label><p class="err" id="jerr"
+                  role="alert"></p></div>
+              <div class="jp" data-s="3"><h3>All set! 🎉</h3><p
+                  id="jdone"></p><span class="tag ph">Demo form – nothing is
+                  sent</span></div>
+              <div class="jnav"><button class="btn btn-o"
+                  id="jb">Back</button><button class="btn btn-p"
+                  id="jx">Continue</button></div></div></div></div></section>
+      <!-- EVENTS -->
+      <section class="page" id="events" hidden>
+        <div class="page-hero"><div class="container"><span
+              class="eyebrow">Events</span><h1>Conversations that move the
+              field</h1><p>Forums, webinars and sponsorship
+              opportunities.</p></div></div>
+        <div class="sec"><div class="container"><div class="row">
+              <div class="col-md-6" id="hackers-halted"><div
+                  class="card rv"><div class="img"
+                    style="--c1:#0b2a5b;--c2:#6a5cff">🎤</div><div
+                    class="bd"><h4>Hackers Halted</h4><p>A Global Forum for
+                      Cybersecurity Insights, Innovation, and Industry
+                      Collaboration.</p><a class="btn btn-p btn-sm" href="#"
+                      target="_blank" rel="noopener">Visit
+                      ↗</a></div></div></div>
+              <div class="col-md-6" id="cyber-exchange"><div
+                  class="card rv"><div class="img"
+                    style="--c1:#12c2b0;--c2:#4c7dff">🔄</div><div
+                    class="bd"><h4>Cybersecurity Exchange</h4><p>Expert
+                      perspectives and industry conversations addressing today’s
+                      cybersecurity challenges.</p><a class="btn btn-p btn-sm"
+                      href="#" target="_blank" rel="noopener">Visit
+                      ↗</a></div></div></div>
+              <div class="col-md-4" id="webinars"><div class="card rv"><div
+                    class="bd"><h4>Webinars</h4><p>Focused discussions led by
+                      cybersecurity practitioners and industry
+                      experts.</p></div></div></div>
+              <div class="col-md-4" id="sponsorships"><div class="card rv"><div
+                    class="bd"><h4>Sponsorships</h4><p>Opportunities for
+                      organizations to support professional cybersecurity
+                      engagement.</p></div></div></div>
+              <div class="col-md-4" id="host"><div class="card rv"><div
+                    class="bd"><h4>Host an Event</h4><p>Propose aligned events
+                      and professional discussions.</p><a
+                      class="btn btn-o btn-sm" href="#host">Submit a
+                      proposal</a></div></div></div>
+            </div>
+            <h3 id="calh" style="margin-top:1rem">Upcoming events <span
+                class="tag ph">Placeholder dates</span></h3><div class="chips"
+              id="chips"></div><div class="row" id="cal"></div>
+            <div class="cta rv" id="sponsor" style="margin-top:2rem"><h2>Become
+                an Official Event Sponsor</h2><p>Support the community and reach
+                security decision-makers.</p><a class="btn btn-p"
+                href="#sponsor">Sponsor an Event</a></div></div></div>
+      </section>
+
+      <!-- GET INVOLVED -->
+      <section class="page" id="get-involved" hidden>
+        <div class="page-hero"><div class="container"><span class="eyebrow">Get
+              Involved</span><h1>Contribute to the profession</h1><p>Your
+              expertise can shape the future of cybersecurity.</p></div></div>
+        <div class="sec"><div class="container" style="display:grid;gap:4rem">
+            <div class="split rv" id="council"><div class="big-img"
+                style="--c1:#0b2a5b;--c2:#4c7dff">🏛</div><div><h2>Volunteer
+                  with the Council</h2><p>Contribute beyond your organization.
+                  Bring expertise and perspective to initiatives advancing the
+                  profession.</p><a class="btn btn-p" href="#get-involved">Learn
+                  more</a></div></div>
+            <div class="split rev rv" id="chapter-vol"><div class="big-img"
+                style="--c1:#12c2b0;--c2:#0b2a5b">📍</div><div><h2>Volunteer
+                  with a Chapter</h2><p>Make an impact where you are. Support
+                  Chapter activities and local professional engagement.</p><a
+                  class="btn btn-p" href="#chapters">Find a
+                  Chapter</a></div></div>
+            <div class="split rv" id="youth"><div class="big-img"
+                style="--c1:#6a5cff;--c2:#12c2b0">🎓</div><div><h2>Volunteer to
+                  Inspire Youth</h2><p>Inspire those who will lead tomorrow.
+                  Support mentorship, awareness and educational
+                  engagement.</p><a class="btn btn-p" href="#get-involved">Learn
+                  more</a></div></div>
+            <div class="split rev rv" id="impact"><div class="big-img"
+                style="--c1:#4c7dff;--c2:#12c2b0">🌍</div><div><h2>Social Impact
+                  and Advocacy Initiatives</h2><p>Cybersecurity leadership with
+                  a broader purpose.</p><span class="tag ph">Supplied images
+                  pending</span><br><a class="btn btn-p"
+                  href="#get-involved">Learn more</a></div></div>
+          </div></div>
+      </section>
+
+      <!-- CHAPTERS / ABOUT -->
+      <section class="page" id="chapters" hidden><div class="page-hero"><div
+            class="container"><span class="eyebrow">Chapters</span><h1>Local
+              communities, global network</h1><p>Existing page retained – new
+              visual system applied.</p></div></div><div class="sec"><div
+            class="container"><span class="tag ph">Existing content retained –
+              new visual system applied</span><div class="map rv"><span
+                class="pin" style="left:22%;top:38%"
+                data-c="Americas"></span><span class="pin"
+                style="left:48%;top:30%" data-c="Europe"></span><span
+                class="pin" style="left:63%;top:48%"
+                data-c="Middle East"></span><span class="pin"
+                style="left:72%;top:58%" data-c="India"></span><span class="pin"
+                style="left:84%;top:42%" data-c="Asia-Pacific"></span><span
+                class="pin" style="left:52%;top:64%"
+                data-c="Africa"></span></div></div></div></section>
+      <section class="page" id="about" hidden><div class="page-hero"><div
+            class="container"><span class="eyebrow">About Us</span><h1>Our
+              mission and leadership</h1><p>Existing page retained – new visual
+              system applied.</p></div></div><div class="sec"><div
+            class="container"><span class="tag ph">Existing content
+              retained</span><div class="tl"><div
+                class="rv"><h5>Founded</h5><p>Placeholder: how the community
+                  began.</p></div><div class="rv"><h5>Chapters expand
+                  worldwide</h5><p>Placeholder: regional growth
+                  milestones.</p></div><div
+                class="rv"><h5>Today</h5><p>Placeholder: leadership and
+                  mission.</p></div></div></div></div></section>
+      <!-- D5 + D6 HANDOVER -->
+      <section class="page" id="handover" hidden>
+        <div class="page-hero"><div class="container"><span class="eyebrow">D5 ·
+              D6</span><h1>Type system and handover</h1><p>Specification, QA
+              report and editing notes.</p></div></div>
+        <div class="sec"><div class="container"><h3>Type and UI scale (desktop,
+              1440 px)</h3><div class="tw rv"><table
+                class="tbl"><tr><th>Element</th><th>Desktop</th><th>Mobile</th><th>Line
+                    height</th><th>Weight</th></tr><tr><td>H1</td><td>52
+                    px</td><td>32
+                    px</td><td>1.2</td><td>800</td></tr><tr><td>H2</td><td>36
+                    px</td><td>26 px</td><td>1.2</td><td>700</td></tr><tr><td>H3
+                    / H4 / H5</td><td>24 / 20 / 18
+                    px</td><td>same</td><td>1.2</td><td>700</td></tr><tr><td>H6
+                    and body</td><td>16 px</td><td>16 px
+                    (minimum)</td><td>1.65</td><td>400–700</td></tr><tr><td>Small
+                    text</td><td>14 px</td><td>14
+                    px</td><td>1.65</td><td>400</td></tr><tr><td>Navigation
+                    labels</td><td>14.4 px</td><td>16
+                    px</td><td>1.2</td><td>500</td></tr><tr><td>Buttons</td><td>14.4
+                    px, padding 13×20
+                    px</td><td>same</td><td>1</td><td>600</td></tr><tr><td>Cards
+                    / icons / section spacing</td><td>radius 18 px · icon 48 px
+                    · 80 px</td><td>radius 18 · 48 · 48
+                    px</td><td>–</td><td>–</td></tr></table></div>
+            <h3 style="margin-top:2.5rem">QA checklist</h3><div
+              class="tw rv"><table
+                class="tbl"><tr><th>Check</th><th>Chrome</th><th>Safari</th><th>Edge</th><th>Firefox</th></tr><tr><td>Layout:
+                    desktop, tablet, mobile</td><td class="ok">✓</td><td
+                    class="ok">✓</td><td class="ok">✓</td><td
+                    class="ok">✓</td></tr><tr><td>Menus and 2-tap mobile
+                    reach</td><td class="ok">✓</td><td class="ok">✓</td><td
+                    class="ok">✓</td><td class="ok">✓</td></tr><tr><td>Anchors
+                    and tabs land correctly</td><td class="ok">✓</td><td
+                    class="ok">✓</td><td class="ok">✓</td><td
+                    class="ok">✓</td></tr><tr><td>External links open new
+                    tab</td><td class="ok">✓</td><td class="ok">✓</td><td
+                    class="ok">✓</td><td
+                    class="ok">✓</td></tr></table></div><span
+              class="tag ph">Sample report – re-run on the final build</span>
+            <h3 style="margin-top:2.5rem">Editing notes</h3><ul
+              class="ck"><li>Menu content: edit the NAV array in the
+                script.</li><li>Colours and sizes: change the CSS variables on
+                :root.</li><li>Placeholder copy is marked with an amber tag
+                until final text arrives.</li><li>Pages changed: Home,
+                Resources, Membership, Events, Get Involved, Chapters, About
+                Us.</li></ul></div></div>
+      </section>
+    </main>
+
+    <footer><div class="container"><div class="row">
+          <div class="col-md-4"><h6>Cyber Council</h6><p
+              style="color:#9db0d6">Leading cybersecurity, together.</p></div>
+          <div class="col-md-4"><h6>Explore</h6><a
+              href="#resources">Resources</a><a
+              href="#membership">Membership</a><a
+              href="#events">Events</a></div>
+          <div class="col-md-4"><h6>Community</h6><a href="#get-involved">Get
+              Involved</a><a href="#chapters">Chapters</a><a href="#about">About
+              Us</a><a href="#handover">Type spec and handover</a></div></div>
+        <p style="color:#6f83ad;margin-top:1.5rem">© 2026 Cyber Council · Demo
+          build with placeholder content</p></div></footer>
+
+    <div class="srch" id="md" hidden><div class="sbox mbox" role="dialog"
+        aria-modal="true" aria-labelledby="mt"><div class="mh"><h4
+            id="mt"></h4><button id="mx" aria-label="Close">✕</button></div><div
+          id="mb"></div></div></div>
+    <div class="srch" id="srch" hidden><div class="sbox" role="dialog"
+        aria-label="Search"><input id="sq"
+          placeholder="Search pages, events, resources…  (Esc to close)"
+          aria-label="Search"><div id="sres"></div></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
